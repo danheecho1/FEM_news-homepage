@@ -1,0 +1,40 @@
+@use "../app/variables" as var;
+
+.newsContainer {
+    background-color: hsl(var.$clr-veryDarkBlue);
+    padding: 1.375em 1.375em 0;
+}
+
+.newsContainer__heading {
+    color: hsl(var.$clr-orange);
+    font: {
+        size: 2rem;
+        weight: var.$fw-bold;
+    }
+}
+
+.newsContainer__newsItemsDiv {
+    hr {
+        border: 0.5px solid hsl(var.$clr-darkBlue);
+    }
+}
+
+.newsContainer__newsItemsDiv__individualNewsItemDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    margin: 2em 0;
+}
+
+.newsContainer__newsItemsDiv__individualNewsItemDiv__heading {
+    color: hsl(var.$clr-white);
+    font: {
+        size: 1.25rem;
+        weight: var.$fw-black;
+    }
+}
+
+.newsContainer__newsItemsDiv__individualNewsItemDiv__paragraph {
+    color: hsl(var.$clr-grayBlue);
+    line-height: 1.75em;
+}
