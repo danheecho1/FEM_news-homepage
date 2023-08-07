@@ -16,7 +16,7 @@ const Navbar = () => {
 		<header className={styles.headerContainer}>
 			<Image src={Logo} alt="Logo" />
 			<nav>
-				<Image src={menuOpenStatus? menuOpen : menuClose} alt="Navigation menu" onClick={toggleMenu} />
+				<Image src={menuOpenStatus? menuClose : menuOpen} alt="Navigation menu" onClick={toggleMenu} className={styles.headerContainer__navBar__menu} />
 			</nav>
 		</header>
 	);

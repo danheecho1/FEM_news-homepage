@@ -1,3 +1,47 @@
+@use "../app/variables" as var;
+
 .articlesContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2.375em;
+}
+
+.articlesContainer__individualArticleDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5em;
+}
+
+.articlesContainer__individualArticleDiv img {
+    width: 100%;
+    height: auto;
+}
+
+.articlesContainer__individualArticleDiv__rightSideDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articlesContainer__individualArticleDiv__rightSideDiv__number {
+    color: hsl(var.$clr-grayBlue);
+    font: {
+        size: 2.125rem;
+        weight: var.$fw-bold;
+    }
+}
+
+.articlesContainer__individualArticleDiv__rightSideDiv__title {
+    font: {
+        size: 1.125rem;
+        weight: var.$fw-black;
+    }
+    &:hover {
+        color: hsl(var.$clr-darkBlue);
+    }
+}
+
+.articlesContainer__individualArticleDiv__rightSideDiv__description {
+    color: hsl(var.$clr-darkBlue);
+    line-height: 1.75em;
 }
