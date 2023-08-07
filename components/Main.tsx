@@ -1,9 +1,15 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import frontPageImage from "../public/image-web-3-mobile.jpg";
 import styles from "./Main.module.css";
 
 const Main = () => {
+	const nonFunctionalAlert = (e:React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault();
+		alert("This link/button is not functional!");
+	}
 	return (
 		<section className={styles.mainContainer}>
 			<Image
@@ -18,7 +24,7 @@ const Main = () => {
 					put the power of the platforms back into the hands of the
 					people. But is it really fulfilling its promise?
 				</p>
-				<button className={styles.mainContainer__textDiv__button}>READ MORE</button>
+				<a href="#" onClick={nonFunctionalAlert} className={styles.mainContainer__textDiv__button}>READ MORE</a>
 			</div>
 		</section>
 	);

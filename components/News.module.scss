@@ -27,10 +27,14 @@
 }
 
 .newsContainer__newsItemsDiv__individualNewsItemDiv__heading {
-    color: hsl(var.$clr-white);
+    color: hsl(var.$clr-white) !important;
     font: {
         size: 1.25rem;
         weight: var.$fw-black;
+    }
+
+    &:hover {
+        color: hsl(var.$clr-darkBlue) !important;
     }
 }
 

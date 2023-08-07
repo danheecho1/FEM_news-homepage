@@ -21,9 +21,12 @@
 }
 
 .newsContainer__newsItemsDiv__individualNewsItemDiv__heading {
-  color: hsl(36, 100%, 99%);
+  color: hsl(36, 100%, 99%) !important;
   font-size: 1.25rem;
   font-weight: 800;
+}
+.newsContainer__newsItemsDiv__individualNewsItemDiv__heading:hover {
+  color: hsl(236, 13%, 42%) !important;
 }
 
 .newsContainer__newsItemsDiv__individualNewsItemDiv__paragraph {
