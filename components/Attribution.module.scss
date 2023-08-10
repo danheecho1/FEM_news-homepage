@@ -1,0 +1,15 @@
+@use "../app/variables" as var;
+
+.attribution, 
+.attribution a {
+    margin-top: 3em;
+    font-size: 0.875rem;
+    text: {
+        wrap: balance;
+        align: center;
+    }
+}
+
+.attribution a:hover {
+    color: hsl(var.$clr-darkBlue);
+}

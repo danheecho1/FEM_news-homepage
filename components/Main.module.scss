@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.75em;
+    margin-bottom: 4.5em;
 }
 
 .mainContainer__textDiv {
@@ -28,12 +29,12 @@
 .mainContainer__textDiv__button {
     background-color: hsl(var.$clr-red);
     border: none;
-    padding: 1.25em 2.5em;
+    padding: 1.125em 2.5em;
     width: fit-content;
     color: hsl(var.$clr-white) !important;
     font: {
         size: 0.875rem;
         weight: var.$fw-bold;
     }
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.325rem;
 }

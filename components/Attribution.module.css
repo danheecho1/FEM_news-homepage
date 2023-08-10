@@ -1,0 +1,11 @@
+.attribution,
+.attribution a {
+  margin-top: 3em;
+  font-size: 0.875rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.attribution a:hover {
+  color: hsl(236, 13%, 42%);
+}/*# sourceMappingURL=Attribution.module.css.map */

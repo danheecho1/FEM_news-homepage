@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import styles from './page.module.css'
-import { Navbar, Main, News, Articles } from '@/components'
+import { Navbar, Main, News, Articles, Attribution } from '@/components'
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
       <Main />
       <News />
       <Articles />
+      <Attribution />
     </div>
   )
 }
