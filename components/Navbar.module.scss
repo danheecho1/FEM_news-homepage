@@ -1,10 +1,31 @@
+@use "../app/variables" as var;
+
 .headerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.25em;
+    // position: fixed;
 }
 
 .headerContainer__navBar__menu {
     cursor: pointer;
+}
+
+.headerContainer__nav__ul {
+    position: fixed;
+    width: 70vw;
+    height: 100vh;
+    border-left: 2px solid hsl(var.$clr-veryDarkBlue);
+    right: 0;
+    top: 111.25px;
+    text-align: center;
+    background-color: hsl(var.$clr-white);
+    opacity: 0.95;
+}
+
+.headerContainer__nav__ul__li {
+    padding: 1em 0;
+    // font-weight: var.$fw-bold;
+    letter-spacing: 0.125em;
 }
