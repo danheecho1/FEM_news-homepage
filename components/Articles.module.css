@@ -38,4 +38,14 @@
 .articlesContainer__individualArticleDiv__rightSideDiv__description {
   color: hsl(236, 13%, 42%);
   line-height: 1.75em;
+}
+
+@media screen and (min-width: 768px) {
+  .articlesContainer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=Articles.module.css.map */

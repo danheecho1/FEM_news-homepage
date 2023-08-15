@@ -39,4 +39,26 @@
 
 .headerContainer__nav__ul__li:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .headerContainer__navBar__menu {
+    display: none;
+  }
+  .headerContainer__nav__ul,
+  .headerContainer__nav__ul.active {
+    position: static;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 1.75em;
+    color: hsl(236, 13%, 42%);
+    font-size: 1.375rem;
+    text-align: center;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .headerContainer__nav__ul__li {
+    letter-spacing: normal;
+  }
 }/*# sourceMappingURL=Navbar.module.css.map */
