@@ -2,7 +2,7 @@
   .contentContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
     gap: 1em;
   }
 }/*# sourceMappingURL=Content.module.css.map */

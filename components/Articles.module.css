@@ -46,6 +46,7 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=Articles.module.css.map */
