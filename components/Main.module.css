@@ -35,6 +35,9 @@
   font-weight: 700;
   letter-spacing: 0.325rem;
 }
+.mainContainer__textDiv__button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
 
 @media screen and (min-width: 768px) {
   .mainContainer {
