@@ -12,7 +12,7 @@ const Main = () => {
 		alert("This link/button is not functional!");
 	};
 
-	const [mobileView, setMobileView] = useState(true);
+	const [mobileView, setMobileView] = useState<boolean | null>(null);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -29,11 +29,13 @@ const Main = () => {
 
 	return (
 		<section className={styles.mainContainer}>
-			<Image
-				src={mobileView ? frontPageImage : frontPageImageDesktop}
-				alt="Web 3"
-				style={{ maxWidth: "100%", height: "auto" }}
-			/>
+			{mobileView !== null && (
+				<Image
+					src={mobileView ? frontPageImage : frontPageImageDesktop}
+					alt="Web 3"
+					style={{ maxWidth: "100%", height: "auto" }}
+				/>
+			)}
 			<div className={styles.mainContainer__textDiv}>
 				<h1 className={styles.mainContainer__textDiv__heading}>
 					The Bright Future of Web 3.0?
