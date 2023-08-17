@@ -48,5 +48,6 @@
     grid-row-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
   }
 }/*# sourceMappingURL=Articles.module.css.map */

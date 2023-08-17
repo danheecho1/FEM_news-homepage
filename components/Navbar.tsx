@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../public/logo.svg";
 import menuClose from "../public/icon-menu-close.svg";
 import menuOpen from "../public/icon-menu.svg";
@@ -32,17 +33,19 @@ const Navbar = () => {
 				/>
 				<ul ref={navMenus} className={styles.headerContainer__nav__ul}>
 					<li className={styles.headerContainer__nav__ul__li}>
-						Home
-					</li>
-					<li className={styles.headerContainer__nav__ul__li}>New</li>
-					<li className={styles.headerContainer__nav__ul__li}>
-						Popular
+						<Link href="#">Home</Link>
 					</li>
 					<li className={styles.headerContainer__nav__ul__li}>
-						Trending
+						<Link href="#">New</Link>
 					</li>
 					<li className={styles.headerContainer__nav__ul__li}>
-						Categories
+						<Link href="#">Popular</Link>
+					</li>
+					<li className={styles.headerContainer__nav__ul__li}>
+						<Link href="#">Trending</Link>
+					</li>
+					<li className={styles.headerContainer__nav__ul__li}>
+						<Link href="#">Categories</Link>
 					</li>
 				</ul>
 			</nav>
