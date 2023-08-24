@@ -36,6 +36,9 @@
   font-weight: 700;
   letter-spacing: 0.325rem;
 }
+.mainContainer__textDiv__button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
 
 @media screen and (min-width: 768px) {
   .mainContainer {
@@ -58,7 +61,7 @@
     grid-column-end: 2;
   }
   .mainContainer__textDiv__paragraph {
-    line-height: 1.625em;
+    line-height: 1.5em;
     grid-row-start: 1;
     grid-row-end: 3;
   }
