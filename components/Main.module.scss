@@ -3,6 +3,7 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.75em;
     margin-bottom: 4.5em;
 }
@@ -70,5 +71,6 @@
         grid-row-end: 4;
         grid-column-start: 2;
         grid-column-end: 3;
+        align-self: end;
     }
 }

@@ -1,7 +1,9 @@
 .newsContainer {
   background-color: hsl(240, 100%, 5%);
-  padding: 1.375em 1.375em 0;
+  padding: 1.375em 1.375em;
   margin-bottom: 4.5em;
+  max-height: 515.875px;
+  overflow-y: scroll;
 }
 
 .newsContainer__heading {

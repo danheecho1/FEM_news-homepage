@@ -2,6 +2,14 @@
   .contentContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.5fr;
+    gap: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     gap: 1em;
   }
